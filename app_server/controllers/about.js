@@ -1,4 +1,4 @@
-const title = 'Travlr Getaways - About';
+const title = process.env.npm_package_description + ' - About';
 
 /* GET about view */
 const about = (req, res) => {
