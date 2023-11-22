@@ -1,4 +1,4 @@
-const title = 'Travlr Getaways - Contact';
+const title = process.env.npm_package_description + ' - Contact';
 
 /* GET contact view */
 const contact = (req, res) => {

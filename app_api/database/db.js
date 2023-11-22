@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const readLine = require('readline');
 const host = process.env.DB_HOST || '127.0.0.1';
-const dbURI = 'mongodb://localhost/travlr/database';
+const dbURI = 'mongodb://localhost/travlr';
 
 mongoose.set('useUnifiedTopology', true);
 
@@ -55,4 +55,4 @@ process.on('SIGTERM', () => {
 connect();
 
 // Bring in Mongoose schema
-require('./travlr');
+require('./models/travlr');

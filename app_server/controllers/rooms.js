@@ -1,6 +1,6 @@
 const fs = require('fs');
 const roomTypes = JSON.parse(fs.readFileSync('./data/room_types.json', 'utf8'));
-const title = 'Travlr Getaways - Rooms';
+const title = process.env.npm_package_description + ' - Rooms';
 
 /* GET rooms view */
 const rooms = (req, res) => {
